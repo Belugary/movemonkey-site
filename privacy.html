@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoveMonkey 隐私政策</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+<main>
+<header><img src="icon.png" alt=""><a href="./">MoveMonkey</a></header>
+
+<h1>隐私政策</h1>
+<p class="meta">生效日期：2026 年 10 月 18 日　·　<a href="#english">English</a></p>
+
+<p>MoveMonkey（以下简称“本 App”）是一款适用于 iPhone 和 Apple Watch 的久坐提醒 App，由独立开发者开发和维护。本 App 无需注册账户，不收集可识别你身份的个人信息。本政策说明本 App 读取哪些数据、数据在何处处理，以及哪些信息会离开你的设备。</p>
+
+<h2>健康与运动数据</h2>
+<p>经你授权，本 App 从“健康” App 读取站立分钟数、站立小时数和步数，并从 iPhone 和 Apple Watch 的运动传感器读取步数。上述数据仅用于判断是否久坐、确定提醒时间，以及确认“起身动动”期间是否起身走动。</p>
+<ul>
+<li>所有判断均在你的 iPhone 和 Apple Watch 上完成，健康与运动数据不会上传至任何服务器。由这些数据在设备上计算出的提醒时间会发送至服务器，详见“离开设备的信息”。</li>
+<li>仅当你在设置中打开“保存为体能训练”时，本 App 才会向“健康” App 写入数据：Apple Watch 上计满 1 分钟的“起身动动”会保存为一次“室内步行”体能训练。未打开时，“起身动动”期间临时开始的体能训练结束后即被丢弃。授权界面会列出“体能训练”的写入权限，原因是“起身动动”期间 Apple Watch 需临时开始一次体能训练以实时读取传感器数据；如系统遗留了未保存的体能训练，本 App 会将其删除。</li>
+<li>健康数据不会用于广告或营销，不会出售，也不会提供给任何第三方。</li>
+</ul>
+
+<h2>设置与记录</h2>
+<p>提醒时段、起身记录等数据仅保存在你的设备上，并通过 Apple 的 WatchConnectivity 在你的 iPhone 与 Apple Watch 之间同步，不使用 iCloud。删除本 App 后，这些数据随之删除。</p>
+
+<h2>离开设备的信息</h2>
+<p>为使提醒在 App 处于后台时仍能准时送达，本 App 使用一台由开发者运营的服务器。每台设备向服务器发送以下信息：</p>
+<ul>
+<li>设备的推送地址：由 Apple 为本 App 的每次安装分配的随机代码，不包含姓名、Apple ID 或设备信息；</li>
+<li>下一次提醒的时间；iPhone 版还发送一个检查时间，用于在 App 长时间未运行时提醒你重新打开。提醒时间由设备根据站立数据、起身记录和提醒设置计算得出，检查时间根据 App 上次运行的时间和提醒时段推算；两者均仅为时间点，不包含步数、站立分钟数等任何健康数据；</li>
+<li>发送方为 iPhone 版还是 Apple Watch 版，以及设备的当前时间（用于准确计算间隔）。</li>
+</ul>
+<p>与 iPhone 配对的 Apple Watch 会保存该 iPhone 的推送地址。当 Apple Watch 发出提醒时，可代该 iPhone 向服务器发送一次提醒时间，以便服务器同时唤醒 iPhone；Apple Watch 从手腕取下、请 iPhone 接替提醒时，还会注明这是一次接替。此过程不向服务器发送任何其他信息。</p>
+<p>提醒时间到达时，服务器通过 Apple 推送通知服务（APNs）向该设备发送一条不可见的后台推送以唤醒本 App，由本 App 在设备上读取数据后决定是否提醒。设备未响应时，服务器会补发一次。检查时间到达时，服务器同样发送一条不可见的后台推送，使仍在后台的 iPhone 版 App 运行一次；Apple Watch 请求接替后 iPhone 未响应时，服务器会向该 iPhone 发送一条可见通知，提示你打开 App。</p>
+<p>服务器仅保存推送地址、对应的版本、待发送的提醒时间和检查时间、待确认的接替、最近一小时内的推送时间，以及最近一次收到该设备信息的时间。提醒时间和检查时间在推送发出后即删除。当 Apple 告知推送地址已失效（例如 App 已被删除），或连续 30 天未收到该设备的信息时，该设备的全部记录将被删除。服务器不保存健康数据、设置、记录，也不保存姓名、账号或联系方式；推送地址对应你的设备，因此在 App Store 的隐私信息中申报为与你关联。服务器也不记录访问者的 IP 地址；仅在服务器发生故障时，错误日志中可能包含 IP 地址，用于排查问题，并在 14 天内自动删除。服务器运行日志仅包含时间、推送地址的前 8 位字符、对应的版本以及 Apple 的回复，用于排查问题。</p>
+
+<h2>本 App 不收集的信息</h2>
+<ul>
+<li>无需账户，不收集姓名、电子邮件地址或电话号码。</li>
+<li>不请求位置权限。</li>
+<li>不包含广告、统计分析或第三方追踪代码，不在其他 App 或网站中追踪你。</li>
+</ul>
+
+<h2>Apple 提供的诊断信息</h2>
+<p>如果你在设备设置中选择与 App 开发者共享分析数据，Apple 可能会向开发者提供本 App 的崩溃报告等匿名诊断信息。此类信息由 Apple 依据其隐私政策处理。你可以随时前往“设置” App，轻点“隐私与安全”，轻点“分析与改进”，然后关闭“与 App 开发者共享”。</p>
+
+<h2>儿童隐私</h2>
+<p>本 App 适合各年龄段的用户使用。本 App 不收集任何用户的个人信息，包括儿童。</p>
+
+<h2>政策更新</h2>
+<p>本政策如有更新，将在本页面发布并修改上方的生效日期。重大变更将在 App 的版本更新说明中告知。</p>
+
+<h2>联系方式</h2>
+<p>如对隐私有任何疑问，请发送电子邮件至 <a href="mailto:movemonkey@billys.fun">movemonkey@billys.fun</a>。</p>
+
+<section class="lang" id="english" lang="en">
+<h1>Privacy Policy</h1>
+<p class="meta">Effective October 18, 2026</p>
+
+<p>MoveMonkey (“the app”) is a sedentary reminder for iPhone and Apple Watch, made and maintained by an independent developer. The app needs no account and does not collect your personal information. This page explains what the app reads, where it is processed, and what leaves your devices.</p>
+
+<h2>Health and motion data stay on your devices</h2>
+<p>With your permission, the app reads stand minutes, stand hours and steps from Apple Health, and steps from the motion sensors of your iPhone and Apple Watch. It uses them only to tell whether you have been sitting, when to remind you, and whether you got up during a break.</p>
+<ul>
+<li>All of this is worked out on your iPhone and Apple Watch. Health and motion data are never uploaded to any server. The reminder times worked out from them on your device are sent to the server; see “What leaves your device”.</li>
+<li>The app writes to Apple Health only when you turn on Save as Workout (保存为体能训练) in its settings: a break (起身动动) that Apple Watch counted to a full minute is then saved as an Indoor Walk workout. When it is off, the workout session started during a break is discarded when it ends. The permission sheet lists writing Workouts because during a break the Watch runs a workout session to read its sensors live; should the system leave behind a workout that was not saved, the app deletes it.</li>
+<li>Health data is never used for advertising or marketing, never sold, and never shared with any third party.</li>
+</ul>
+
+<h2>Your settings and records</h2>
+<p>Your reminder hours and break records are kept on your devices and synced between your own iPhone and Apple Watch through Apple’s WatchConnectivity, not iCloud. Deleting the app deletes them.</p>
+
+<h2>What leaves your device</h2>
+<p>So that reminders arrive on time while the app is in the background, the app uses a small server run by the developer. Each device tells the server:</p>
+<ul>
+<li>its push address (a random token Apple issues to this installation of the app; it contains no name, Apple ID or device information);</li>
+<li>when its next reminder is due; the iPhone app also sends a check time, used to remind you to open the app again when it has not run for a long while. The reminder time is worked out on the device from stand data, your break records and your reminder settings, the check time from when the app last ran and your reminder hours; each is only a moment in time, with no step counts, stand minutes or other health data;</li>
+<li>whether it is the iPhone or the Watch app, and the device’s current time (to count the interval correctly).</li>
+</ul>
+<p>An Apple Watch paired with an iPhone keeps that iPhone’s push address. When the Watch issues a reminder, it may send the server a reminder time on the iPhone’s behalf, so that the server wakes the iPhone at the same time; when the Watch has been taken off and asks the iPhone to take over, it says that this is a hand-over. Nothing else is sent to the server in this process.</p>
+<p>At that time the server sends the device a silent background push through the Apple Push Notification service, which wakes the app; the app then looks at the data on your device and decides whether to remind you. If the device does not answer, the server sends one more. At the check time the server likewise sends a silent background push, so an iPhone app still in the background runs once; when the Watch has asked the iPhone to take over and the iPhone does not answer, the server sends that iPhone one visible notification asking you to open the app.</p>
+<p>The server keeps only the push address, which app it belongs to, the pending reminder and check times, a hand-over awaiting its answer, the times of pushes sent in the last hour, and when it last heard from the device. Each time is deleted once its push is sent; everything about a device is deleted when Apple reports its push address is no longer valid (for example, the app was deleted) or after 30 days without hearing from it. The server keeps no health data, settings or records, and no name, account or contact details; because a push address belongs to your device, the App Store privacy details list it as linked to you. The server does not log visitors’ IP addresses either; only when the server has a fault may its error log hold one, for troubleshooting, deleted automatically within 14 days. Its operating log holds only times, the first 8 characters of a push address, which app it is and Apple’s reply, for troubleshooting.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+<li>No account; no name, email or phone number is collected.</li>
+<li>No location permission is requested.</li>
+<li>No advertising, analytics or third-party tracking code; you are not tracked across apps or websites.</li>
+</ul>
+
+<h2>Diagnostics provided by Apple</h2>
+<p>If you choose to share analytics with app developers in your device’s settings, Apple may provide anonymous diagnostics such as crash reports to the developer. Apple handles these under its own privacy policy, and you can turn sharing off at any time in Settings &gt; Privacy &amp; Security &gt; Analytics &amp; Improvements.</p>
+
+<h2>Children</h2>
+<p>The app is suitable for users of all ages. It collects no personal information from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, this page will be updated along with its effective date. Significant changes will be mentioned in the app’s release notes.</p>
+
+<h2>Contact</h2>
+<p>For any privacy question, email <a href="mailto:movemonkey@billys.fun">movemonkey@billys.fun</a>.</p>
+</section>
+
+<footer><a href="./">MoveMonkey</a>　·　<a href="support.html">支持 Support</a></footer>
+</main>
+</body>
+</html>

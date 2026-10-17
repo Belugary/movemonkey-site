@@ -1,0 +1,51 @@
+/* MoveMonkey's site: the home's day colours (Phone/HomeStyle.swift, HomePalette.day) and
+   its night colours for dark mode. */
+:root {
+  --field: #FFF1E0;
+  --sheet: #FFFBF6;
+  --text: #4A1904;
+  --secondary: #8A5A44;
+  --rule: #F1CDA9;
+  --link: #C24600;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --field: #0C121D;
+    --sheet: #202B43;
+    --text: #FFE9D6;
+    --secondary: #B7A79A;
+    --rule: #24314C;
+    --link: #FFC63A;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--field);
+  color: var(--text);
+  font: 17px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header img { width: 56px; height: 56px; border-radius: 13px; }
+header a { color: inherit; text-decoration: none; font-weight: 700; font-size: 22px; }
+h1 { font-size: 28px; line-height: 1.3; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { margin: 0 0 12px; }
+ul, ol { padding-left: 1.2em; }
+a { color: var(--link); }
+.meta { color: var(--secondary); font-size: 15px; margin-bottom: 24px; }
+.card {
+  background: var(--sheet);
+  border-radius: 18px;
+  padding: 20px 20px 8px;
+  margin: 20px 0;
+}
+.lang { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+footer { color: var(--secondary); font-size: 14px; margin-top: 48px; }
+footer a { color: inherit; }
