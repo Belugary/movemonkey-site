@@ -1,0 +1,36 @@
+# MoveMonkey
+
+> MoveMonkey is a stand-up reminder for iPhone and Apple Watch with a cartoon monkey as its character. It reminds you to get up when you have been sitting too long, and cheers when you do. Chinese store name (Simplified and Traditional): MoveMonkey：久坐提醒 (久坐提醒 means "sedentary reminder", a reminder to get up after sitting too long).
+
+## What it does
+
+- Within the reminder hours you set (08:00 to 21:00 by default), it counts the time since you last got up. Once you have sat for the time you choose (30, 45, 60, or 90 minutes; 60 by default), your iPhone sends a notification, and Apple Watch reminds you too if you wear one.
+- It reads stand minutes, stand hours, and steps (with your permission, from the Health app and Motion & Fitness) to tell whether you have been up and moving. When it sees that you have, the clock starts over, so moving pushes the next reminder back.
+- Get Up: tap it and walk for 1 minute; Apple Watch counts your steps in real time (without Apple Watch, iPhone counts them), and the monkey cheers for you when the minute is up.
+- When you start Get Up on iPhone, a Live Activity shows the walk's time on the Lock Screen and in the Dynamic Island.
+- Just Moved: tell it you just got up, and the clock starts over.
+- Today's stand hours count toward a daily stand goal (10 hours by default); on the day you reach it you earn a banana award. Every day starts at zero.
+- Pause reminders for a few hours or for the rest of the day; set a lunch break with no reminders; in the morning it waits until you are up (2 hours at most).
+- Works with iPhone alone; Apple Watch is optional.
+
+## What it is not
+
+- Not a medical device; it makes no health claims and gives no medical advice.
+- No account, no ads, no analytics or tracking code. Health data stays on your devices. To remind you on time, the devices send the developer's server only the reminder times they work out, with a push token (the privacy policy lists everything sent and kept).
+
+## Facts
+
+- Platforms: iPhone with iOS 18 or later; Apple Watch with watchOS 10 or later.
+- Languages: English, Simplified Chinese, Traditional Chinese.
+- Price: free.
+- Category: Health & Fitness.
+- Developer: an independent developer.
+- Contact: movemonkey@billys.fun
+
+## Pages
+
+- [Home](https://movemonkey.app/en/): what MoveMonkey is, in English
+- [Support](https://movemonkey.app/en/support.html): common questions and contact
+- [Privacy Policy](https://movemonkey.app/en/privacy.html): what is read, what is sent, how to delete it
+- [首页（简体中文）](https://movemonkey.app/)
+- [首頁（繁體中文）](https://movemonkey.app/zh-hant/)

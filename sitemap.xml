@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://movemonkey.app/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/zh-hant/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/zh-hant/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/support.html"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/zh-hant/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/support.html"/>
+  </url>
+  <url>
+    <loc>https://movemonkey.app/en/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/support.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/support.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://movemonkey.app/en/support.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://movemonkey.app/support.html"/>
+  </url>
+</urlset>
