@@ -1,0 +1,133 @@
+/* The answer pages and health articles (Site/<slug>/index.html): one reading style for all of them.
+   Loaded after ../style.css and home.css, whose footer and fonts the pages keep.
+   Look (decided 2026-10-26 by the owner): Notion-style; white page, warm near-black text, one neutral
+   box for each answer, bold for the key line; the brand gold only as small markers. */
+
+:root {
+  --field: #FFFFFF;   /* page */
+  --sheet: #F6F3EF;   /* answer box, contents box, app card, sources and footer */
+  --text: #2B2420;    /* body and headings */
+  --secondary: #7A6E66;
+  --muted: #9A8F87;   /* list numbers in the contents */
+  --rule: #ECE6E0;
+  --link: #8A3B12;    /* the app's action brown */
+  --gold: #FFC233;    /* the app's gold: markers only */
+  --gold-ink: #F2B200;
+  --link-line: rgba(138, 59, 18, .35);
+  --refs-line: #DDD3CA;
+  color-scheme: light;
+}
+/* Dark mode (decided 2026-10-26 by the owner, 「用深黑」): Notion's warm near-black; the drawings stay
+   on their white cards, the gold markers unchanged. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --field: #191919;
+    --sheet: #252525;
+    --text: #EAE4DD;
+    --secondary: #A39A92;
+    --muted: #7F7770;
+    --rule: #303030;
+    --link: #E9A27A;
+    --link-line: rgba(233, 162, 122, .4);
+    --refs-line: #4A4440;
+    color-scheme: dark;
+  }
+}
+html, body { background: var(--field); color: var(--text); }
+footer { margin-top: 0; }
+
+/* Reading column. Phone first; wide screens below. */
+.article { max-width: 680px; margin: 0 auto; padding: 32px 16px 8px; background: var(--field); color: var(--text); font-size: 17px; line-height: 1.7; }
+.article header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+.article header a { color: inherit; text-decoration: none; font-weight: 700; font-size: 22px; }
+.article header img { border-radius: 13px; }
+/* The language switch, as on the support and privacy pages (style.css .langs). */
+.article header .langs a, .article header .langs span { font-weight: 400; font-size: 14px; }
+.article header .langs a { color: var(--link); }
+.article header .langs span { color: var(--secondary); }
+.article h1, .article h2 { color: var(--text); font-weight: 600; text-wrap: balance; word-break: keep-all; overflow-wrap: anywhere; }
+.article h1 { font-size: 30px; line-height: 1.25; letter-spacing: -.01em; margin: 0 0 10px; }
+.article h2 { font-size: 23px; line-height: 1.35; margin: 52px 0 14px; scroll-margin-top: 16px; }
+.article p, .article li { margin: 0 0 14px; }
+.article ul, .article ol { padding-left: 1.3em; margin: 0 0 12px; }
+.article ul { list-style: disc; }
+.article ol { list-style: decimal; }
+.article ul li::marker { color: var(--gold-ink); }
+.article ol li::marker { color: var(--secondary); }
+.article strong, .article mark { font-weight: 600; }
+.article mark { background: none; color: inherit; padding: 0; }
+.article a { color: var(--link); text-decoration-color: var(--link-line); text-underline-offset: 3px; }
+.article .meta { color: var(--secondary); font-size: 14px; margin-bottom: 20px; }
+.article .intro { font-size: 17px; }
+.article .note { color: var(--secondary); font-size: 14px; }
+
+/* The answer: the first sentence under each question. */
+.article .answer { background: var(--sheet); border-radius: 12px; padding: 16px 20px; margin: 0 0 14px; }
+
+/* Contents: a box on phones, a sticky side column on wide screens. */
+.toc { background: var(--sheet); border-radius: 16px; padding: 14px 18px 6px; margin: 20px 0 8px; font-size: 15px; }
+.toc b { display: block; color: var(--secondary); font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.toc ol { padding-left: 1.3em; margin: 0 0 8px; }
+.article .toc li { margin: 0 0 6px; }
+.article .toc li::marker { color: var(--muted); }
+.article .toc a { color: var(--text); text-decoration: none; }
+
+/* Figures: a wide drawing, and a tall one for phones through <picture>. */
+.article figure { margin: 22px -4px; }
+.article figure img { width: 100%; height: auto; border-radius: 14px; display: block; }
+.article figcaption { color: var(--secondary); font-size: 14px; margin-top: 6px; text-align: right; text-wrap: balance; }
+
+/* Comparison table. */
+.article .table { overflow-x: auto; margin: 0 0 12px; }
+.article table { border-collapse: collapse; width: 100%; min-width: 0; font-size: 14px; line-height: 1.55; }
+.article th, .article td { border-top: 1px solid var(--rule); padding: 9px 8px 9px 0; text-align: left; vertical-align: top; }
+.article th { color: var(--secondary); font-weight: 600; word-break: keep-all; } /* headers break at spaces only */
+.article td:first-child { color: var(--secondary); width: 28%; }
+.article td.us { font-weight: 600; }
+
+/* Footnotes. */
+sup.ref { font-size: 11px; line-height: 0; margin-left: 1px; }
+sup.ref a { text-decoration: none; color: var(--link); }
+
+/* The app card at the end, linking to the home page. */
+.app-card { display: flex; gap: 22px; align-items: center; background: var(--sheet); border-radius: 22px; padding: 22px 22px 22px 14px; margin: 48px 0 40px; color: inherit; text-decoration: none; transition: transform .15s ease, box-shadow .15s ease; }
+.app-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(74, 25, 4, .10); }
+@media (prefers-reduced-motion: reduce) { .app-card { transition: none; } .app-card:hover { transform: none; } }
+.app-card-art { width: 104px; height: auto; flex: none; align-self: center; }
+.article a.app-card, .article a.app-card h2 { color: var(--text); }
+.app-card-text { min-width: 0; }
+.article .app-card-kicker { color: var(--secondary); margin: 0 0 4px; }
+.article .app-card h2 { margin: 0 0 10px; font-size: 21px; }
+.app-card p { font-size: 15px; line-height: 1.65; margin: 0 0 14px; }
+.app-card-go { display: inline-block; margin-top: 4px; font-weight: 600; color: var(--link); font-size: 15px; }
+@media (max-width: 480px) { .app-card { flex-direction: column; align-items: flex-start; padding: 20px; } .app-card-art { width: 96px; align-self: center; margin: 0; } }
+
+/* Sources, after the article, quiet. */
+.refs-wrap { background: var(--sheet); border-top: 1px solid var(--rule); }
+.refs { max-width: 680px; margin: 0 auto; padding: 28px 16px 36px; font-size: 13px; line-height: 1.55; color: var(--secondary); }
+.refs h2 { font-size: 15px; font-weight: 600; margin: 0 0 10px; color: var(--text); }
+.refs ol { padding-left: 1.6em; margin: 0; list-style: decimal; }
+.refs li { margin: 0 0 4px; scroll-margin-top: 16px; }
+.refs li:target { background: var(--rule); border-radius: 6px; }
+.refs .back { text-decoration: none; margin-left: 4px; }
+.refs a { color: var(--secondary); text-decoration-color: var(--refs-line); }
+.refs a:hover { color: var(--link); }
+body > footer { background: var(--sheet); border-top: 1px solid var(--rule); }
+body > footer, body > footer .links a, body > footer .links span { color: var(--secondary); }
+
+/* Wide screens: contents in a sticky side column that marks the section being read (answer.js). */
+@media (min-width: 1080px) {
+  .article { max-width: 1000px; display: grid; grid-template-columns: 220px minmax(0, 680px); column-gap: 64px; row-gap: 0; justify-content: center; padding-top: 48px; font-size: 18px; line-height: 1.75; }
+  .article > * { grid-column: 2; }
+  .article > .toc { grid-column: 1; grid-row: 1 / span 999; /* every row of the article, however long; empty rows take no height */ align-self: start; position: sticky; top: 32px; margin: 0; background: none; padding: 0; }
+  .article > .toc ol { padding-left: 0; list-style: none; border-left: 2px solid var(--rule); }
+  .article > .toc li { margin: 0; }
+  .article > .toc a { display: block; padding: 5px 0 5px 14px; color: var(--secondary); font-size: 14px; line-height: 1.45; }
+  .article > .toc a:hover, .article > .toc a.on { color: var(--text); box-shadow: inset 2px 0 0 var(--gold); margin-left: -2px; padding-left: 16px; }
+  .article h1 { font-size: 42px; line-height: 1.2; }
+  .article h2 { font-size: 30px; margin-top: 64px; }
+  .article .intro { font-size: 18px; }
+  .article table { font-size: 15px; }
+  .app-card p { font-size: 16px; }
+  .refs { max-width: 1000px; padding-left: 302px; } /* 16 padding + 220 contents + 64 gap + 2 centring: under the text column */
+}

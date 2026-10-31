@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apple Watch 站立提醒怎么关？能改成半小时吗？- MoveMonkey 久坐提醒</title>
+<meta name="description" content="苹果手表（Apple Watch）自带的站立提醒按整点计算：一小时的前 50 分钟一直坐着，才会提醒。本文按 Apple 的说明，讲清它怎么关、能不能改成半小时、晚上会不会提醒、为什么有时不提醒。">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../assets/home.css">
+<link rel="stylesheet" href="../assets/answer.css">
+<link rel="icon" href="../favicon.png" type="image/png" sizes="192x192">
+<link rel="canonical" href="https://movemonkey.app/apple-watch-stand-reminder/">
+<link rel="alternate" hreflang="zh-Hans" href="https://movemonkey.app/apple-watch-stand-reminder/">
+<link rel="alternate" hreflang="zh-Hant" href="https://movemonkey.app/zh-hant/apple-watch-stand-reminder/">
+<link rel="alternate" hreflang="en" href="https://movemonkey.app/en/apple-watch-stand-reminder/">
+<link rel="alternate" hreflang="x-default" href="https://movemonkey.app/apple-watch-stand-reminder/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MoveMonkey">
+<meta property="og:title" content="坐了快两个小时，为什么 Apple Watch 还没提醒？">
+<meta property="og:url" content="https://movemonkey.app/apple-watch-stand-reminder/">
+<meta property="og:description" content="按整点计算：一小时的前 50 分钟一直坐着，才会提醒。">
+<meta property="og:image" content="https://movemonkey.app/apple-watch-stand-reminder/share.png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="600">
+<meta property="og:locale" content="zh_CN">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Apple Watch 自带的站立提醒，能做什么，不能做什么","inLanguage":"zh-Hans","datePublished":"2026-10-26","dateModified":"2026-10-27","image":"https://movemonkey.app/apple-watch-stand-reminder/hour-grid.png","author":{"@type":"Organization","name":"MoveMonkey","url":"https://movemonkey.app/"},"publisher":{"@type":"Organization","name":"MoveMonkey","logo":{"@type":"ImageObject","url":"https://movemonkey.app/icon.png"}}}</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1d173e6a02c0404d98618fa9eedeca10"}'></script>
+</head>
+<body class="home">
+<main class="article">
+<header><img src="../icon.png" alt="" width="56" height="56"><a href="../">MoveMonkey</a><nav class="langs"><a href="../en/apple-watch-stand-reminder/" hreflang="en" lang="en">English</a><span aria-current="page">简体中文</span><a href="../zh-hant/apple-watch-stand-reminder/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></nav></header>
+
+<h1>Apple Watch 自带的站立提醒，能做什么，不能做什么</h1>
+<p class="meta">适用于 watchOS 27 和 iOS 27 · 2026 年 10 月核对</p>
+
+<p class="intro">下面按 Apple 的说明，回答关于苹果手表（Apple Watch）站立提醒的几个常见问题。文中的设置路径，我们都在 iPhone 和 Apple Watch 上逐项核对过。</p>
+
+<nav class="toc" aria-label="目录"><b>目录</b><ol>
+<li><a href="#when">站立提醒是怎么算时间的？</a></li>
+<li><a href="#half-hour">能改成半小时吗？</a></li>
+<li><a href="#night">晚上会提醒吗？怎么关？</a></li>
+<li><a href="#silent">开着却不提醒，是怎么回事？</a></li>
+<li><a href="#accuracy">站立为什么算得不准？</a></li>
+<li><a href="#iphone">只用 iPhone 有站立提醒吗？</a></li>
+<li><a href="#myths">站立提醒的几个常见误解</a></li>
+</ol></nav>
+
+<h2 id="table">Apple Watch 站立提醒<wbr>和<span class="nw">久坐提醒 App</span>，一张表看清区别</h2>
+<div class="table"><table>
+<tr><th></th><th>Apple Watch 自带的站立提醒</th><th>MoveMonkey 久坐提醒 App</th></tr>
+<tr><td>什么时候提醒</td><td>一小时的前 50 分钟一直坐着，在第 50 分钟左右提醒</td><td class="us">从你上次起身开始，坐满你设定的时间才提醒</td></tr>
+<tr><td>能不能改间隔</td><td>不能，只有一个开关</td><td class="us">能，30、45、60 或 90 分钟</td></tr>
+<tr><td>能不能设时段（比如午休不提醒）</td><td>不能</td><td class="us">能，可设提醒时段和午休</td></tr>
+<tr><td>摘下 Apple Watch 时</td><td>不提醒</td><td class="us">iPhone 照常提醒</td></tr>
+<tr><td>只用 iPhone</td><td>没有站立提醒</td><td class="us">可以用</td></tr>
+<tr><td>是否收费</td><td>免费，Apple Watch 自带</td><td class="us">核心功能永久免费</td></tr>
+</table></div>
+
+<h2 id="when">Apple Watch 站立提醒是怎么算时间的？</h2>
+<p class="answer">Apple Watch 的站立提醒按整点计算：<mark>如果一小时的前 50 分钟你一直坐着，它会在第 50 分钟左右提醒你。</mark></p>
+<p>iPhone“健身” App 的通知设置里，Apple 的说明是：“若一小时的前50分钟一直保持坐姿，在Apple Watch上接收站立提醒。”<sup class="ref" id="c1"><a href="#r1">[1]</a></sup></p>
+<p>可以把它想成一排格子：每个整点小时是一格，比如 10:00 到 11:00。这一格的前 50 分钟里你站起来活动过 1 分钟，这一格就算站过，不再提醒；一直没有，就在 10:50 左右提醒。<strong>它只看格子，不看你连续坐了多久。</strong></p>
+<figure><picture><source media="(max-width: 600px)" srcset="hour-grid-tall.webp" width="1077" height="1390"><img src="hour-grid.webp" width="1662" height="687" alt="站立提醒按整点一格一格计算：9:00 到 10:00 这一格里站过，不提醒；10:00 到 11:00 这一格前 50 分钟一直坐着，10:50 提醒。"></picture><figcaption>站立提醒按整点一格一格算，只看格子里有没有站过。</figcaption></figure>
+<p>因为按整点算，而不是从你坐下开始算，坐多久才会收到提醒并不固定：</p>
+<ul>
+<li>9:55 起身走动了 2 分钟，9:57 坐下：10 点这一格还没站过，10:50 收到提醒，坐了 53 分钟。</li>
+<li>9:00 起身倒了杯水，9:01 坐下：9 点这一格已经算站过，9:50 不会提醒；10 点这一格一直坐着，10:50 才提醒。这时已经<strong>连续坐了 1 小时 49 分钟</strong>。</li>
+</ul>
+<figure><picture><source media="(max-width: 600px)" srcset="worst-case-tall.webp" width="1004" height="1398"><img src="worst-case.webp" width="1653" height="770" loading="lazy" alt="时间轴：9:00 起身倒水，9:01 坐下，9:50 不提醒，10:50 才提醒，连续坐了 1 小时 49 分钟。"></picture><figcaption>9 点这一格已经算站过，站立提醒要到 10:50 才提醒。</figcaption></figure>
+<p>Apple Watch 按整点一小时一小时地算站立：一小时里站起来并活动至少 1 分钟，这一小时就算站过，记为 1 个站立小时。<sup class="ref" id="c2"><a href="#r2">[2]</a></sup>站立目标是一天要有几个站立小时，可以设为 6 到 16 小时。<sup class="ref" id="c3"><a href="#r3">[3]</a></sup>站立分钟数、站立和锻炼的区别、目标怎么改，见 <a href="../apple-watch-stand-hours/">Apple Watch 的站立是怎么算的？</a></p>
+
+<h2 id="half-hour">站立提醒可以改成半小时吗？</h2>
+<p class="answer"><mark>Apple Watch 的站立提醒不能改成半小时。</mark>它只有一个开关，不能改间隔，也不能设定时段。</p>
+<p>想每 30 分钟被提醒一次，可以借用 Apple 自带的“钟鸣”等功能，但它们都只按时间提醒，不管你刚才有没有站起来；每种办法怎么设、要设几条，见 <a href="../apple-watch-stand-reminder-30-minutes/">Apple Watch 站立提醒可以改成半小时吗？想每 30 分钟提醒一次怎么办</a>。</p>
+<p>至于多久起来一次合适，各方指南和研究怎么说，见<a href="../how-often-to-get-up/">久坐多久要起来一次？每小时还是每 30 分钟</a>。</p>
+<p>如果你希望坐满 30 分钟才提醒、起身后重新计时，可以考虑 <a href="#movemonkey">MoveMonkey</a> 这类久坐提醒 App。</p>
+
+<h2 id="night">晚上睡觉时也会有站立提醒吗？怎么关？</h2>
+<p class="answer"><mark>摘下 Apple Watch 睡觉，就不会收到站立提醒。</mark>Apple 的说明：Apple Watch 无法检测到它已戴在你的手腕上时，不提供站立提醒。<sup class="ref" id="c4"><a href="#r4">[4]</a></sup></p>
+<p>佩戴 Apple Watch 睡觉时会不会收到站立提醒、怎么只在晚上关掉，见 <a href="../apple-watch-stand-reminder-night/">Apple Watch 晚上也提醒站立？睡觉时怎么关</a>。</p>
+<p>如果想要晚上自动不提醒，可以考虑久坐提醒 App <a href="#movemonkey">MoveMonkey</a>，它只在你设定的提醒时段内提醒。</p>
+
+<h2 id="silent">站立提醒开着却不提醒，是怎么回事？</h2>
+<p class="answer">Apple Watch 的站立提醒已打开却没有收到提醒，<mark>通常是因为这一格已经算站过了</mark>，哪怕你只是起身接了杯水。所以可能连续坐了一个多小时也没收到提醒，见<a href="#when">上文 9:00 倒水的例子</a>。</p>
+<p>其他可能的情况：</p>
+<ul>
+<li>Apple Watch 没有佩戴好。Apple 的说明：Apple Watch 无法检测到它已戴在你的手腕上时，不提供站立提醒。<sup class="ref"><a href="#r4">[4]</a></sup></li>
+<li>打开了勿扰模式或某个专注模式。</li>
+<li>当天的站立目标已经达成。<span class="note">这一条是用户反映的。</span></li>
+</ul>
+
+<h2 id="accuracy">Apple Watch 站立为什么算得不准？</h2>
+<p class="answer">Apple Watch 记录站立，看的是你有没有站起来<mark>并活动</mark>，不只是有没有站着：一小时里站起来并活动至少 1 分钟，才算这个小时站过。<sup class="ref"><a href="#r2">[2]</a></sup></p>
+<p>如果你设定了使用轮椅，“站立”圆环会变成“转动”圆环，站立提醒也随之变成转动提醒。</p>
+<p>站了却没记上是怎么回事，见 <a href="../apple-watch-stand-hours/#not-counted">Apple Watch 站立为什么记不准？</a></p>
+
+<h2 id="iphone">只用 iPhone，没有 Apple Watch，有站立提醒吗？</h2>
+<p class="answer"><mark>只用 iPhone，没有站立提醒。</mark>Apple 的说明：iPhone 上的“健身” App 显示“活动”圆环；有 Apple Watch，才能看到“锻炼”圆环和“站立”圆环。<sup class="ref" id="c5"><a href="#r5">[5]</a></sup></p>
+<p>只用 iPhone 还能怎么提醒自己起来，见<a href="../iphone-stand-reminder/">只用 iPhone，没有 Apple Watch，怎么提醒自己别久坐</a>。</p>
+<p>如果只用 iPhone 也想要久坐提醒，可以考虑 <a href="#movemonkey">MoveMonkey</a>，它不需要 Apple Watch 也能用。</p>
+
+<h2 id="myths">Apple Watch 站立提醒的几个常见误解</h2>
+<ul>
+<li><strong>“站立提醒在整点提醒。”</strong>不对。只有这一小时的前 50 分钟一直坐着，它才会在第 50 分钟左右提醒，见<a href="#when">上文</a>。</li>
+<li><strong>“连续坐满 50 分钟才提醒。”</strong>不对。它看的是这一小时（比如 10:00 到 11:00）的前 50 分钟，不是从你坐下开始算。</li>
+<li><strong>“站着就算站过。”</strong>不对。要站起来并活动至少 1 分钟，这一小时才算站过，见<a href="#accuracy">上文</a>。</li>
+</ul>
+
+<section class="promo">
+<a class="app-card" href="../" aria-labelledby="movemonkey">
+<img class="app-card-art" src="../assets/img/m-idle-900.webp" width="590" height="939" alt="MoveMonkey 的小猴子" loading="lazy">
+<div class="app-card-text">
+<p class="app-card-kicker">久坐提醒 App · 即将在 App Store 推出</p>
+<h2 id="movemonkey">MoveMonkey：从上次起身开始算的久坐提醒</h2>
+<p><mark>从你上次起身开始，坐满你设定的时间（30、45、60 或 90 分钟），小猴子才会提醒你。</mark>适用于 iPhone 和 Apple Watch，只用 iPhone 也可以；走动或站立后自动重新计时。</p>
+<p>早上等你起身后才开始计时，午休可以设为不提醒，提醒时段也由你设定。</p>
+<p>轻点“起身动动”，只要走上 1 分钟，小猴子还会为你喝彩。</p>
+<p>核心功能永久免费，没有广告。</p>
+<span class="app-card-go">看更详细的介绍 →</span>
+</div>
+</a>
+</section>
+</main>
+<script src="../assets/answer.js"></script>
+<div class="refs-wrap"><section class="refs" aria-labelledby="sources">
+<h2 id="sources">资料来源</h2>
+<ol>
+<li id="r1">Apple：iPhone“健身” App 通知设置中“站立提醒”的说明文字（iOS 27）<a class="back" href="#c1" aria-label="回到正文">↩︎</a></li>
+<li id="r2">Apple Watch 使用手册：<a href="https://support.apple.com/zh-cn/guide/watch/apd3bf6d85a6/watchos">通过 Apple Watch 追踪每日健身记录</a><a class="back" href="#c2" aria-label="回到正文">↩︎</a></li>
+<li id="r3">Apple Watch 使用手册：<a href="https://support.apple.com/zh-cn/guide/watch/apd29b30023c/watchos">在 Apple Watch 上调整健身圆环目标</a>；6 到 16 小时的范围见 Apple Watch“健身记录” App 的“更改目标”（watchOS 27）<a class="back" href="#c3" aria-label="回到正文">↩︎</a></li>
+<li id="r4">Apple 支持：<a href="https://support.apple.com/zh-cn/111819">如果 Apple Watch 意外锁定</a><a class="back" href="#c4" aria-label="回到正文">↩︎</a></li>
+<li id="r5">iPhone 使用手册：<a href="https://support.apple.com/zh-cn/guide/iphone/iph4c34a8a95/ios">在 iPhone 上的“健身”中查看健身记录摘要</a><a class="back" href="#c5" aria-label="回到正文">↩︎</a></li>
+</ol>
+</section></div>
+<footer><div class="wrap links"><a href="../">MoveMonkey 久坐提醒</a><a href="../support.html">支持</a><a href="../privacy.html">隐私政策</a><span>© 2026 MoveMonkey</span></div></footer>
+</body>
+</html>

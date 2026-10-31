@@ -1,0 +1,109 @@
+/* MoveMonkey's site: the home's day colours (Phone/HomeStyle.swift, HomePalette.day) and
+   its night colours for dark mode. */
+:root {
+  --field: #FFF1E0;
+  --sheet: #FFFBF6;
+  --text: #4A1904;
+  --secondary: #8A5A44;
+  --rule: #F1CDA9;
+  --link: #C24600;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --field: #0C121D;
+    --sheet: #202B43;
+    --text: #FFE9D6;
+    --secondary: #B7A79A;
+    --rule: #24314C;
+    --link: #FFC63A;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--field);
+  color: var(--text);
+  font: 17px/1.7 -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header img { width: 56px; height: 56px; border-radius: 13px; }
+header a { color: inherit; text-decoration: none; font-weight: 700; font-size: 22px; }
+h1 { font-size: 28px; line-height: 1.3; margin: 0 0 6px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { margin: 0 0 12px; }
+ul, ol { padding-left: 1.2em; }
+a { color: var(--link); }
+.meta { color: var(--secondary); font-size: 15px; margin-bottom: 24px; }
+.card {
+  background: var(--sheet);
+  border-radius: 18px;
+  padding: 20px 20px 8px;
+  margin: 20px 0;
+}
+.lang { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 24px; }
+footer { color: var(--secondary); font-size: 14px; margin-top: 48px; }
+footer a { color: inherit; white-space: nowrap; }
+/* The privacy policy's lists of what is processed (B26): scroll sideways on a narrow screen. */
+.table { overflow-x: auto; margin: 0 0 1em; }
+table { border-collapse: collapse; font-size: 15px; line-height: 1.5; min-width: 560px; }
+th, td { border-top: 1px solid var(--rule); padding: 8px 10px 8px 0; text-align: left; vertical-align: top; }
+th { color: var(--secondary); font-weight: 600; }
+/* The other languages of the same page, at the header's right. */
+.langs { margin-left: auto; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 12px; font-size: 14px; }
+.langs a, .langs span { font-weight: 400; font-size: 14px; }
+.langs a { color: var(--link); }
+.langs span { color: var(--secondary); }
+/* On a phone the languages take their own line under the name. */
+header { flex-wrap: wrap; }
+@media (max-width: 480px) {
+  .langs { margin-left: 0; width: 100%; justify-content: flex-start; }
+}
+/* The home pages (index.html in each language) have their own stylesheet, assets/home.css, written
+   by scripts/site-home/build.py; this one serves the privacy policy and support pages (and the copy
+   of the privacy policy inside the app). */
+
+/* The support and privacy pages' frame (body.doc; E32, the owner's direction 2026-10-27): the
+   answer pages' reading column and type (assets/answer.css) and the home's footer bar
+   (assets/home.css: footer, .wrap, .links), in this file's colours. Scoped to .doc because the
+   answer pages load this file too. */
+.doc { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif; }
+html:lang(zh-Hant) .doc { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang TC", "Helvetica Neue", sans-serif; }
+.doc main { padding: 32px 16px 56px; }
+.doc h1, .doc h2 { font-weight: 600; text-wrap: balance; }
+.doc h1 { font-size: 30px; line-height: 1.25; letter-spacing: -.01em; margin: 0 0 10px; }
+/* A little under the answer pages' 23/30: these headings are long and numbered. */
+.doc h2 { font-size: 21px; line-height: 1.4; margin: 48px 0 12px; scroll-margin-top: 16px; }
+.doc main a { text-underline-offset: 3px; }
+.doc header a { text-decoration: none; }
+/* The support page's address, the line a reader comes for. */
+.doc .card .mail { font-size: 21px; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+.doc .card .mail a { text-decoration: none; }
+.doc .card .mail a:hover { text-decoration: underline; }
+/* The privacy policy's contents: its own headings, linked (no label of its own). */
+.doc-toc { background: var(--sheet); border-radius: 16px; padding: 10px 18px; margin: 24px 0 8px; font-size: 15px; line-height: 1.5; }
+.doc-toc ul { list-style: none; padding: 0; margin: 0; }
+.doc-toc li { margin: 0; }
+.doc-toc a { display: block; padding: 5px 0; color: var(--text); text-decoration: none; }
+.doc-toc a:hover { color: var(--link); }
+/* The footer: the home's bar, on this page's ground with a rule above. */
+.doc > footer { border-top: 1px solid var(--rule); color: var(--secondary); margin: 0; font-size: 15px; }
+.doc .wrap { width: min(1200px, 100% - 48px); margin-inline: auto; }
+.doc .links { display: flex; flex-wrap: wrap; gap: 8px 28px; padding: 28px 0 calc(28px + env(safe-area-inset-bottom)); }
+.doc .links a { color: inherit; text-decoration: none; white-space: normal; }
+.doc .links a:hover { color: var(--text); }
+@media (min-width: 768px) { .doc .wrap { width: min(1200px, 100% - 96px); } }
+/* Wide screens: the answer pages' reading size. */
+@media (min-width: 1080px) {
+  .doc { font-size: 18px; line-height: 1.75; }
+  .doc main { padding-top: 48px; }
+  .doc h1 { font-size: 42px; line-height: 1.2; }
+  .doc h2 { font-size: 24px; margin-top: 56px; }
+}
+.doc .links span { margin-left: auto; }
+@media (max-width: 520px) { .doc .links span { margin-left: 0; width: 100%; } }
